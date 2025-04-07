@@ -15,6 +15,6 @@ This C project implements an application using Linked Lists and Radix Sort to ma
 12. Save sorted information to an output file (sorted_districts.txt).
 13. Exit the program.
 
-Note: The Radix Sort function is currently not working correctly.
+🔧Note: The Radix Sort function(option 3 in the menu) is currently not working correctly.
 
 
