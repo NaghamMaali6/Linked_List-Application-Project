@@ -1,0 +1,158 @@
+/*
+  Name: Nagham Maali
+  ID: 1212312
+  Sec.: 2
+*/
+
+//libraries:
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+//function Definition:
+/*1*/void displayMainMenu() ;
+/*2*/void Open_and_Load() ;
+/*3*/void createList() ;
+
+struct Node
+{
+    char city[10] ;
+    char town[10] ;
+    int population ;
+    struct Node *Next ;
+    struct Node *Previous ;
+};
+
+struct Node *Head = NULL ;
+struct Node *Tail = NULL ;
+
+int main()
+{
+    printf("Hello!\n");
+
+    int x ;
+    int condition = 1 ;
+
+    createList() ;
+
+    while(condition == 1)
+    {
+        displayMainMenu() ;
+        scanf("%d" , &x) ;
+
+        if(x == 1)
+        {
+            Open_and_Load() ;
+        }
+        else if(x == 2)
+        {
+
+        }
+        else if(x == 3)
+        {
+
+        }
+        else if(x == 4)
+        {
+
+        }
+        else if(x == 5)
+        {
+
+        }
+        else if(x == 6)
+        {
+
+        }
+        else if(x == 7)
+        {
+
+        }
+        else if(x == 8)
+        {
+
+        }
+        else if(x == 9)
+        {
+
+        }
+        else if(x == 10)
+        {
+
+        }
+        else if(x == 11)
+        {
+
+        }
+        else if(x == 12)
+        {
+
+        }
+        else if(x == 13)
+        {
+
+        }
+        else if(x == 14)
+        {
+            printf("Bye!\n") ;
+            break ;
+        }
+        else
+        {
+            printf("invalid option!!!\n") ;
+            printf("try again :)\n") ;
+        }
+    }
+
+    return 0;
+}
+
+void displayMainMenu()
+{
+    printf("please select an option(1-14):\n") ;
+    printf("1. Load the input file (Palestinian districts and their town with population).\n") ;
+    printf("2. Print the loaded information before sorting.\n") ;
+    printf("3. Sort the districts alphabetically using Radix sort.\n") ;
+    printf("4. Sort the towns for each district based on population in ascending order.\n") ;
+    printf("5. Print the sorted information.\n") ;
+    printf("6. Add a new district to the list of sorted districts (and sort the list)\n") ;
+    printf("7. Add a new town to a certain district.\n") ;
+    printf("8. Delete a town from a specific district.\n") ;
+    printf("9. Delete a complete district.\n") ;
+    printf("10. Calculate the population of Palestine, the max and min town population.\n") ;
+    printf("11. Print the districts and their total population (without towns details).\n") ;
+    printf("12. Change the population of a town.") ;
+    printf("13. Save to output file.\n") ;
+    printf("14. Exit.\n") ;
+}
+
+void Open_and_Load()
+{
+    FILE *input_file ;
+    char Line[50] ;
+
+    input_file = fopen("districts.txt" , "r") ;
+
+    if(input_file == NULL)
+    {
+        printf("the file is empty!\n") ;
+    }
+
+    while(fgets(Line , sizeof(Line) , input_file))
+    {
+        //printf("%s\n" , Line) ; to check the reading process
+    }
+}
+
+void createList()
+{
+    struct Node *temp ;
+
+    temp = (struct Node *)malloc(sizeof(struct Node)) ;
+
+    if(temp == NULL)
+    {
+        printf("out of memory!\n") ;
+        return ;
+    }
+}

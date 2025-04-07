@@ -1,0 +1,14 @@
+Hebron District , population = 140000
+Halhul , 40000
+Dura , 100000
+Jenin District , population = 130000
+Jaba , 7000
+Yabad , 31000
+Jenin , 92000
+Gaza District , population = 70000
+Jabalia , 20000
+Beit Hanoon , 50000
+Ramallah District , population = 21000
+Qarawah , 5000
+Birzeit , 10000
+albira , 6000
